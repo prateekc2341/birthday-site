@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background: radial-gradient(circle at top, #ffe4ec, #fff);
+}
