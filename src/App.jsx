@@ -8,7 +8,7 @@ import BirthdayCountdown from "./components/BirthdayCountdown";
 function App() {
   return (
     <BirthdayCountdown>
-      <BrowserRouter>
+      <BrowserRouter basename="/birthday-site">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

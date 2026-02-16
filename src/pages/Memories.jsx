@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const images = [
-  "/images/pic1.jpg",
-  "/images/pic2.jpg",
-  "/images/pic3.jpg",
+  `${import.meta.env.BASE_URL}images/pic1.jpg`,
+  `${import.meta.env.BASE_URL}images/pic2.jpg`,
+  `${import.meta.env.BASE_URL}images/pic3.jpg`,
 ];
 
 export default function Memories() {

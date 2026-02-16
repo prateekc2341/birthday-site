@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import.meta.env.BASE_URL
 
 export default function Home() {
 
@@ -58,7 +59,7 @@ useEffect(() => {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url(/images/pic4.jpg)`,
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/pic4.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
