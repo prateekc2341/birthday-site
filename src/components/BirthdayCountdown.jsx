@@ -7,6 +7,11 @@ export default function BirthdayCountdown({ children }) {
   const [timeLeft, setTimeLeft] = useState(0);
   const [loading, setLoading] = useState(true);
 
+  const bypass =
+  window.location.search.includes("bypass=true") ||
+  localStorage.getItem("bypassCountdown") === "true";
+
+
   // fetch IST time from server
   useEffect(() => {
     fetch("https://timeapi.io/api/Time/current/zone?timeZone=Asia/Kolkata")
@@ -63,7 +68,7 @@ export default function BirthdayCountdown({ children }) {
   }
 
   // birthday reached → open site
-  if (!timeLeft) return children;
+  if (!timeLeft || bypass) return children;
 
   return (
     <div className="h-screen w-full bg-black text-white flex flex-col items-center justify-center text-center">
