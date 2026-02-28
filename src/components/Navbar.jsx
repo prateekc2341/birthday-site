@@ -56,7 +56,7 @@ export default function Navbar() {
           >
             Message
           </Link>
-
+          
         </div>
       </div>
     </div>
