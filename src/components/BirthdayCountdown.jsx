@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function BirthdayCountdown({ children }) {
-  const targetDate = new Date("2026-03-01T11:29:00+05:30");
+  const targetDate = new Date("2026-03-02T00:00:00+05:30"); // IST midnight
 
   const [currentTime, setCurrentTime] = useState(null);
   const [timeLeft, setTimeLeft] = useState(null);
