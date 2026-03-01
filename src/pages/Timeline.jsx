@@ -46,7 +46,7 @@ const timelineData = [
   },
   {
     date: "February 5, 2026",
-    title: "The Emotional Goodbye",
+    title: "Emotional but beautifully memorable day",
     description:
       "The day I left the office. It wasn’t just about work. That place gave me you. And walking away felt emotional in more ways than one.",
   },
