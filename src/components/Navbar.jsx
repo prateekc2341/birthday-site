@@ -26,37 +26,44 @@ export default function Navbar() {
 
           <Link
             to={withQuery("/")}
-            className={`transition ${
-              isActive("/") 
+            className={`transition ${isActive("/")
                 ? "text-pink-600 border-b-2 border-pink-500 pb-1"
                 : "text-gray-700 hover:text-pink-600"
-            }`}
+              }`}
           >
             Home
           </Link>
 
           <Link
             to={withQuery("/memories")}
-            className={`transition ${
-              isActive("/memories")
+            className={`transition ${isActive("/memories")
                 ? "text-pink-600 border-b-2 border-pink-500 pb-1"
                 : "text-gray-700 hover:text-pink-600"
-            }`}
+              }`}
           >
             Memories
           </Link>
 
           <Link
             to={withQuery("/message")}
-            className={`transition ${
-              isActive("/message")
+            className={`transition ${isActive("/message")
                 ? "text-pink-600 border-b-2 border-pink-500 pb-1"
                 : "text-gray-700 hover:text-pink-600"
-            }`}
+              }`}
           >
             Message
           </Link>
-          
+
+          <Link
+            to={withQuery("/timeline")}
+            className={`transition ${isActive("/timeline")
+                ? "text-pink-600 border-b-2 border-pink-500 pb-1"
+                : "text-gray-700 hover:text-pink-600"
+              }`}
+          >
+            Our Story
+          </Link>
+
         </div>
       </div>
     </div>
